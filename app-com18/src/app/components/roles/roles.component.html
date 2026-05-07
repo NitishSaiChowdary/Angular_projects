@@ -1,0 +1,37 @@
+<div class="row">
+    <div *ngIf="isLoader; else roleListTemplate" class="col-12 text-center">
+        <div class="spinner-grow text-muted"></div>
+        <div class="spinner-grow text-primary"></div>
+        <div class="spinner-grow text-success"></div>
+        <div class="spinner-grow text-info"></div>
+        <div class="spinner-grow text-warning"></div>
+        <div class="spinner-grow text-danger"></div>
+        <div class="spinner-grow text-secondary"></div>
+        <div class="spinner-grow text-dark"></div>
+        <div class="spinner-grow text-light"></div>
+    </div>
+    <ng-template #roleListTemplate>
+        <div class="col-12">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>sr No</th>
+                        <th>Emp firstName</th>
+                        <th>Emp LastName</th>
+                        <th>email</th>
+                        <th>mobileNo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let role of roleList;let srno= index">
+                        <td>{{srno+1}}</td>
+                        <td>{{role.firstName}}</td>
+                        <td>{{role.lastName}}</td>
+                        <td>{{role.email}}</td>
+                        <td>{{role.mobileNo}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </ng-template>
+</div>

@@ -1,0 +1,25 @@
+<div class="row">
+    <div *ngIf="isLoader; else designationsListTemplate" class="col-12 text-center">
+        <div class="spinner-grow text-muted"></div>
+        <div class="spinner-grow text-primary"></div>
+        <div class="spinner-grow text-success"></div>
+        <div class="spinner-grow text-info"></div>
+        <div class="spinner-grow text-warning"></div>
+        <div class="spinner-grow text-danger"></div>
+        <div class="spinner-grow text-secondary"></div>
+        <div class="spinner-grow text-dark"></div>
+        <div class="spinner-grow text-light"></div>
+    </div>
+    <ng-template #designationsListTemplate>
+        <div class="col-3" *ngFor="let item of designationsList; let i = index">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">{{item.firstName}}</h4>
+                    <p class="card-text">{{item.email}}</p>
+                    <a href="#" class="card-link">Edit</a>
+                    <a href="#" class="card-link">Delete</a>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</div>

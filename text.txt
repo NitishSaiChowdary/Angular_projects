@@ -1,0 +1,59 @@
+npm install -g @angular/cli
+to create project --->
+-ng new (projectname)
+cd project name
+ng serve 
+
+to create the page --->
+ ng generate component (component name) or ng g c (component name)
+
+data Binding =>
+-interprotion -->{{}}
+-property binding -->[]
+-twoway binding -->[(ngModel)]
+-event binding -->(click)="message()"
+
+Directive =>
+-Structual-->ngIf,ngFor
+,attribute-->ngClass,ngStyle
+
+
+to api into angular first we need import 
+in app.config.ts-->provideHttpClient();
+
+
+
+python -3.11.9
+node - 20.19.0 
+
+
+Azure - angular
+https://www.youtube.com/watch?v=U4m_pYAGd_g
+
+Azure - spring boot 
+https://www.youtube.com/watch?v=QXIxKZINJV4
+
+AWS CI/CD -
+https://www.youtube.com/watch?v=40X6abe5wv0&t=2237s 
+
+Spring Boot Hibernate MySQL CRUD REST API Tutorial-
+https://www.youtube.com/watch?v=4Ico2HjRTCE
+
+https://www.youtube.com/watch?v=uNB2N_w_ypo
+
+Banking Application using Spring Boot
+https://www.youtube.com/watch?v=5i379k0Xh_s
+
+Spring Framework and Microservices Full Course--
+https://www.youtube.com/watch?v=Jl9OKQ92SJU&t=47423s
+
+Microservices Security Using JWT--
+https://www.youtube.com/watch?v=MWvnmyLRUik&t=675s
+GitHub like
+https://github.com/ashokitschool/Microservices_Security/tree/main/05-Auth-Service/src/main/java/in/ashokit
+
+
+
+
+
+
